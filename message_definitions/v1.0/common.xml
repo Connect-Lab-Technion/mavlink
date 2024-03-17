@@ -6549,5 +6549,27 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+    <message id="9901" name="LAB_FROM_DASHBOARD">
+      <description>Advanced control lab: messages from dashboard to drone.</description>
+      <field type="float" name="power_percent" units="%">Power percentage on motor outputs.</field>
+      <field type="float" name="ref_x" units="m">Reference X position.</field>
+      <field type="float" name="ref_y" units="m">Reference Y position.</field>
+      <field type="float" name="ref_z" units="m">Reference Z position.</field>
+      <field type="float" name="ref_yaw" units="rad">Reference yaw orientation.</field>
+      <field type="float" name="ref_pit" units="rad">Reference pitch orientation.</field>
+      <field type="float" name="ref_rol" units="rad">Reference roll orientation.</field>
+    </message>
+    <message id="9902" name="LAB_TO_DASHBOARD">
+      <description>Advanced control lab: messages from drone to dashboard.</description>
+      <field type="float" name="logging01">Generic Logging 1.</field>
+      <field type="float" name="logging02">Generic Logging 2.</field>
+      <field type="float" name="logging03">Generic Logging 3.</field>
+      <field type="float" name="logging04">Generic Logging 4.</field>
+      <field type="float" name="logging05">Generic Logging 5.</field>
+      <field type="float" name="logging06">Generic Logging 6.</field>
+      <field type="float" name="logging07">Generic Logging 7.</field>
+      <field type="float" name="logging08">Generic Logging 8.</field>
+      <field type="float" name="logging09">Generic Logging 9.</field>
+    </message>
   </messages>
 </mavlink>
