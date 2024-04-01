@@ -6551,7 +6551,7 @@
     </message>
     <message id="9901" name="LAB_FROM_DASHBOARD">
       <description>Advanced control lab: messages from dashboard to drone.</description>
-      <field type="uint8_t" name="switch" >Switch to start the controller after the connection is made. </field>
+      <field type="uint8_t" name="master_switch" >Switch to start the controller after the connection is made. </field>
       <field type="float" name="power" units="%">Power poercentage on motor outputs</field>
       <field type="float" name="ref_x" units="m">Reference X position</field>      
       <field type="float" name="ref_y" units="m">Reference Y position</field>
