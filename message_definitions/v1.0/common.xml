@@ -6226,5 +6226,20 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+      <message id="9901" name="DASHBOARD_TO_DRONE">
+         <description>Advanced control lab: messages from dashboard to drone.</description>
+         <field name="master_switch" type="uint8_t">Switch to start the controller after the connection is made. </field>
+         <field name="power" type="float" units="%">Power poercentage on motor outputs</field>
+         <field name="ref_x" type="float" units="m">Reference X position</field>      
+         <field name="ref_y" type="float" units="m">Reference Y position</field>
+         <field name="ref_z" type="float" units="m">Reference Z position</field>
+         <field name="ref_yaw" type="float" units="m">Reference yaw orientation</field>
+         <field name="ref_pitch" type="float" units="m">Reference pitch orientation</field>
+         <field name="ref_roll" type="float" units="m">Reference roll orientation</field>
+      </message>
+      <message id="9902" name="DRONE_TO_DASHBOARD">
+         <description>Advanced control lab: messages from drone to dashboard.</description>
+         <field name="logging" type="float[31]">Flexible loging message. Check size. </field>
+      </message>
   </messages>
 </mavlink>
