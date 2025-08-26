@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<mavlink>
+    <include>ardupilotmega.xml</include>
+    <messages>
+        <message id="9901" name="DASHBOARD_TO_DRONE">
+            <description>Advanced control lab: messages from dashboard to drone.</description>
+            <field name="time_world" type="float" units=""></field>
+            <field name="master_switch" type="uint8_t" units=""></field>
+            <field name="power" type="float" units=""></field>
+            <field name="ref_x" type="float" units=""></field>
+            <field name="ref_y" type="float" units=""></field>
+            <field name="ref_z" type="float" units=""></field>
+            <field name="ref_yaw" type="float" units=""></field>
+            <field name="ref_pitch" type="float" units=""></field>
+            <field name="ref_roll" type="float" units=""></field>
+        </message>
+        <message id="9902" name="DRONE_TO_DASHBOARD">
+            <description>Advanced control lab: messages from drone to dashboard.</description>
+            <field name="in_dashboard_time_world" type="float" units=""></field>
+            <field name="in_dashboard_master_switch" type="float" units=""></field>
+            <field name="in_dashboard_power" type="float" units=""></field>
+            <field name="in_dashboard_ref_x" type="float" units=""></field>
+            <field name="in_dashboard_ref_y" type="float" units=""></field>
+            <field name="in_dashboard_ref_z" type="float" units=""></field>
+            <field name="in_dashboard_ref_yaw" type="float" units=""></field>
+            <field name="in_dashboard_ref_pitch" type="float" units=""></field>
+            <field name="in_dashboard_ref_roll" type="float" units=""></field>
+            <field name="in_parameters_accelerometer_x" type="float" units=""></field>
+            <field name="in_parameters_accelerometer_y" type="float" units=""></field>
+            <field name="in_parameters_accelerometer_z" type="float" units=""></field>
+            <field name="in_parameters_gyroscope_x" type="float" units=""></field>
+            <field name="in_parameters_gyroscope_y" type="float" units=""></field>
+            <field name="in_parameters_gyroscope_z" type="float" units=""></field>
+            <field name="in_parameters_opticalflow_x" type="float" units=""></field>
+            <field name="in_parameters_opticalflow_y" type="float" units=""></field>
+            <field name="in_parameters_barometer_pressure" type="float" units=""></field>
+            <field name="in_parameters_rangefinder_distance" type="float" units=""></field>
+            <field name="in_parameters_rpm_1" type="float" units=""></field>
+            <field name="in_parameters_rpm_2" type="float" units=""></field>
+            <field name="in_parameters_rpm_3" type="float" units=""></field>
+            <field name="in_parameters_rpm_4" type="float" units=""></field>
+            <field name="in_parameters_battery_voltage" type="float" units=""></field>
+            <field name="in_parameters_battery_current" type="float" units=""></field>
+            <field name="in_parameters_yaw" type="float" units=""></field>
+            <field name="out_estimators_orient_roll" type="float" units=""></field>
+            <field name="out_estimators_orient_pitch" type="float" units=""></field>
+            <field name="out_estimators_orient_yaw" type="float" units=""></field>
+            <field name="out_estimators_orient_rate_roll" type="float" units=""></field>
+            <field name="out_estimators_orient_rate_pitch" type="float" units=""></field>
+            <field name="out_estimators_orient_rate_yaw" type="float" units=""></field>
+            <field name="out_estimators_pos_x" type="float" units=""></field>
+            <field name="out_estimators_pos_y" type="float" units=""></field>
+            <field name="out_estimators_pos_z" type="float" units=""></field>
+            <field name="out_estimators_pos_dx" type="float" units=""></field>
+            <field name="out_estimators_pos_dy" type="float" units=""></field>
+            <field name="out_estimators_pos_dz" type="float" units=""></field>
+            <field name="out_estimators_battery_SOC" type="float" units=""></field>
+            <field name="out_controllers_motor1" type="float" units=""></field>
+            <field name="out_controllers_motor2" type="float" units=""></field>
+            <field name="out_controllers_motor3" type="float" units=""></field>
+            <field name="out_controllers_motor4" type="float" units=""></field>
+            <field name="out_controllers_cmd_thrust" type="float" units=""></field>
+            <field name="out_controllers_cmd_tau_roll" type="float" units=""></field>
+            <field name="out_controllers_cmd_tau_pitch" type="float" units=""></field>
+            <field name="out_controllers_cmd_tau_yaw" type="float" units=""></field>
+            <field name="out_controllers_cmd_roll" type="float" units=""></field>
+            <field name="out_controllers_cmd_pitch" type="float" units=""></field>
+            <field name="out_controllers_cmd_yaw" type="float" units=""></field>
+            <field name="out_sensors_clock" type="float" units=""></field>
+            <field name="out_sensors_accelerometer_x" type="float" units=""></field>
+            <field name="out_sensors_accelerometer_y" type="float" units=""></field>
+            <field name="out_sensors_accelerometer_z" type="float" units=""></field>
+            <field name="out_sensors_gyroscope_x" type="float" units=""></field>
+            <field name="out_sensors_gyroscope_y" type="float" units=""></field>
+            <field name="out_sensors_gyroscope_z" type="float" units=""></field>
+            <field name="out_sensors_barometer_pressure" type="float" units=""></field>
+            <field name="out_sensors_rangefinder_distance" type="float" units=""></field>
+        </message>
+    </messages>
+</mavlink>
